@@ -55,7 +55,7 @@ console.log('Test string: 123: Result: '+ re.test('012'));
 console.log('Test string: ABCDE: Result: '+ re.test('ABCDE'));
 console.log('---------------------------------------');
 
-/* not a character - ^ TBD??? */
+/* not character a or A */
 re = /[^a]/i;
 console.log("Regular expression: /[^a]/i");
 console.log('Test string: cat: Result: '+ re.test('cat'));

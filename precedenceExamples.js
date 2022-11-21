@@ -1,4 +1,10 @@
-/* alterntates - OR : abc or def */
+/* Precedence */
+/* Parentheses, 
+  Quantifiers (* + ? [m,n]), 
+  Sequence abc ^ $ \b \B, 
+  Alternate OR |  */
+  
+/* alternates - OR : abc or def */
 re = /abc|def/i;
 console.log("Regular expression: /abc|def/");
 console.log('Test string: qwerty123!!: Result: '+ re.test('qwerty123!!'));
@@ -26,9 +32,5 @@ console.log('Test string: bbb: Result: '+ re.test('bbb'));
 console.log('Test string: aa: Result: '+ re.test('aa'));
 console.log('Test string: aabb: Result: '+ re.test('aabb'));
 
-/* Precedence */
-/* Parentheses, 
-  Quantifiers (* + ? [m,n]), 
-  Sequence abc ^ $ \b \B, 
-  Alternate OR |  */
+
 

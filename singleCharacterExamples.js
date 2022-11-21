@@ -9,6 +9,13 @@ console.log('Test string: \\t: Result: '+ re.test('\t'));
 console.log('Test string: \\n: Result: '+ re.test('\n'));
 console.log('---------------------------------------');
 
+/* any single character including newline */
+re = /./s;
+console.log("Regular expression: /./");
+console.log('Test string: abc: Result: '+ re.test('abc\ndef'));
+console.log('Test string: \\n: Result: '+ re.test('\n'));
+console.log('---------------------------------------');
+
 /* the pattern is a single character - either of a, b, or c */
 re = /[abc]/i;
 console.log("Regular expression: /[abc]/");
